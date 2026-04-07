@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع قائمة المهام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">
+    <h1 class="title">لوحة إدارة المهام</h1>
+
+    <div class="container">
+        <div class="cont1">
+             <form onsubmit="createNewElement(event)">
+           <div>
+             <label for="">ادخل رقم المهمة</label><br>
+            <input type="text" placeholder="رقم تعريفي" id="idnum" class="input-group" required>
+           </div>
+
+
+           <div>
+             <label for="">ادخل وقت المهمة</label><br>
+            <input class="input-group" type="time" id="time" required>
+           </div>
+
+
+
+            <div>
+            <label for="">ادخل اسم المهمة</label><br>
+            <input class="input-group" type="text" placeholder="اسم معبر" id="taskName" required>
+            </div>
+
+
+
+            <div>
+                <label for="">ادخل درجة الأولوية</label><br>
+            <select name="" id="SelectTask" class="input-group" required>
+                <option value="أولوية قصوى">اولوية قصوى</option>
+                <option value="أولوية متوسطة">اولوية متوسطة</option>
+                <option value="أولوية أقل">اولوية أقل</option>
+            </select>
+            </div>
+
+
+           <div>
+             <label for="">اختر حالة الإنجاز</label><br>
+            <select name="" id="IsFinish" class="input-group" required>
+                <option value="تم الإنجاز">تم الإنجاز</option>
+                <option value="لم يتم الإنجاز">لم يتم الإنجاز</option>
+                <option value="قيد الإنجاز">قيد الإنجاز</option>
+            </select>
+           </div>
+
+            <button class="submit" type="submit">إضافة مهمة</button>
+
+        </form>
+
+        </div>
+                   
+
+
+    </div>
+
+    <div class="three_columns">
+        <div id="Finish" class="card">
+            <h2 class="green">المهام المنجزة</h2>
+        </div>
+        <div id="Pending" class="card">
+            <h2 class="orange">المهام التي قيد الأنجاز</h2>
+        </div>
+                <div id="Unfinished" class="card">
+            <h2 class="red">المهام غير المنجزة</h2>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Gravitas+One&family=Noto+Sans+Arabic:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --mcolor:rgb(0, 17, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: "Noto Sans Arabic", sans-serif;
+    font-style: normal;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 30px;
+    background-image: linear-gradient(135deg, var(--mcolor), #5bb5ff );
+    padding: 30px;
+    font-size: 2.5em;
+    color: white;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0,0.1);
+}
+
+.container {
+    margin: 0 20px;
+}
+
+
+.cont1 {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.submit {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(30, 101, 255);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    font-size: 1.2em;
+    cursor: pointer;
+    grid-column: 1 / -1;
+}
+
+.submit:hover {
+    background-color: rgb(3, 0, 209);
+}
+
+.submit:active {
+    background-color: rgb(3, 0, 209);
+}
+
+label {
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    width: 90%;
+    padding: 15px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.input-group:focus {
+    border-color: #5bb5ff;
+    outline: none;
+    box-shadow: 0 0 3px rgb(30, 101, 255);
+}
+
+
+
+
+/* columns styleing*/
+
+.three_columns {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: auto;
+    gap: 35px;
+    margin-top: 50px;
+    overflow: scroll;
+    margin-bottom: 50px;
+
+}
+
+.three_columns div {
+    background-color: white;
+    max-height: 400px;
+    min-width: 90%;
+    padding: 20px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0,0.8);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    overflow: scroll;
+    margin: auto;
+}
+
+.green {
+    color: rgb(0, 194, 58);
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+/*from JavaScript*/
+
+.three_columns .parent1 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.three_columns .pcom {
+    box-shadow: 7px 7px 0px rgb(0, 0, 0,0.5);
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+.three_columns .punf {
+    box-shadow: 7px 7px 0px rgb(0, 0, 0,0.5);
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+.three_columns .ppen {
+    box-shadow: 7px 7px 0px rgb(0, 0, 0,0.5);
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+.delet {
+    background-color: rgb(175, 1, 1);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+@media(min-width:1100px){
+    .delet {
+        padding: 15px;
+    }
+}
+@media(max-width:1100px){
+    .delet {
+        padding: 10px;
+    }
+}
+
+.delet:hover {
+    background-color: rgb(128, 0, 0);
+}
+
+.finishedbtn {
+    background-color: rgb(1, 204, 102);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.finishedbtn:hover {
+    background-color: rgb(47, 161, 2);
+}
+
+.Unfinishedbtn {
+    background-color: rgb(223, 15, 0);
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.Unfinishedbtn:hover {
+    background-color: rgb(161, 0, 0);
+}
